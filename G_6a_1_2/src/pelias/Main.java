@@ -13,6 +13,10 @@ public class Main {
     private static List<Integer> arrayTestList = new ArrayList<>();
     private static List<Integer> linkedTestList = new LinkedList<>();
 
+    /**
+     * Die Main Methode für das testen der einzelnen Methoden
+     * @param args Konsolenargumente
+     */
     public static void main(String[] args) {
         ListTester lt = new ListTester();
         int testInt = 20000;
@@ -34,6 +38,11 @@ public class Main {
         System.out.println("ListIndex for LinkedList: " + benchMark(() -> lt.listIndex(linkedTestList)) + "ms");
     }
 
+    /**
+     * Berechnet wie lange eine Methode zum ausführen benötigt.
+     * @param runnable Die Lamda mit der auszuführenden Methode
+     * @return Die Zeit die benötogt wurde
+     */
     public static long benchMark(Runnable runnable) {
         long start = System.currentTimeMillis();
         runnable.run();
@@ -41,11 +50,15 @@ public class Main {
         return end - start;
     }
 
+    /**
+     * Generiert eine Zufällige Liste
+     * @param anzahlZufallsZahlen die anzahl der zufallszahlen
+     */
     private static void generateRandomLists(int anzahlZufallsZahlen) {
         for (int i = 0; i < anzahlZufallsZahlen; i++) {
             int random = (int) (Math.random() * Integer.MAX_VALUE) + (int) (Math.random() * Integer.MIN_VALUE);
-           arrayTestList.add(i);
-           linkedTestList.add(i);
+           arrayTestList.add(random);
+           linkedTestList.add(random);
         }
     }
 }
