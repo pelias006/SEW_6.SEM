@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/6.SEM.iml" filepath="$PROJECT_DIR$/6.SEM.iml" />
       <module fileurl="file://$PROJECT_DIR$/G_6a_1_2/G_6a_1_2.iml" filepath="$PROJECT_DIR$/G_6a_1_2/G_6a_1_2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lotto/Lotto.iml" filepath="$PROJECT_DIR$/Lotto/Lotto.iml" />
     </modules>
   </component>
 </project>
