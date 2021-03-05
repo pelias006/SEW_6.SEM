@@ -8,7 +8,7 @@ import javax.swing.*;
  * @author Patrick Elias
  * @version 2021-02-23
  */
-public class LottoUI {
+public class LottoUI extends JPanel{
 
     private JPanel hauptPanel;
     private JList list1;
@@ -45,6 +45,10 @@ public class LottoUI {
     private JLabel tip7Label;
     private JPanel tipInsertPanel;
     private JPanel buttonPanel;
+
+    public LottoUI() {
+        this.add(hauptPanel);
+    }
 
     private void createUIComponents() {
         // TODO: place custom component creation code here

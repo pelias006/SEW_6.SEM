@@ -22,8 +22,8 @@ public class DatenSpeicher {
     private static File file;
 
     public DatenSpeicher(String fileName) {
-        fileName = fileName;
-        file = new File("", fileName);
+        this.fileName = fileName;
+        file = new File(this.fileName);
 
         if (!file.exists()) {
             try {
